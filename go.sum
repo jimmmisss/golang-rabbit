@@ -1,0 +1,4 @@
+github.com/smallfish/rabbitmq-http v0.0.0-20130922023240-147e282abb39 h1:Mbsm1pp4K21WRhbUAWM7DOi21twVBlqprokWioVBUGA=
+github.com/smallfish/rabbitmq-http v0.0.0-20130922023240-147e282abb39/go.mod h1:aVTIE7plchN2kwGTOTlN3YcNk2pc5gi3HsAL1l9dk0Q=
+github.com/streadway/amqp v1.0.0 h1:kuuDrUJFZL1QYL9hUNuCxNObNzB0bV/ZG5jV3RWAQgo=
+github.com/streadway/amqp v1.0.0/go.mod h1:AZpEONHx3DKn8O/DFsRAY58/XVQiIPMTMB1SddzLXVw=
