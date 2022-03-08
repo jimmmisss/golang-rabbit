@@ -25,14 +25,7 @@ func main() {
 	handleError(err, "Cannot Connect Chanel")
 	defer ch.Close()
 
-	q, err := ch.QueueDeclare(
-		"TestQueue",
-		false,
-		false,
-		false,
-		false,
-		nil,
-	)
+	q, err := ch.QueueDeclare("TestQueue", false, false, false, false, nil)
 	handleError(err, "Cannot Connect Queue Declare")
 	fmt.Println(q)
 

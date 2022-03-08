@@ -22,21 +22,15 @@ func main() {
 	ch, err := conn.Channel()
 	handleErrorConsume(err, "Cannot Connect Chanel")
 	defer ch.Close()
-	msgs, err := ch.Consume(
-		"TestQueue",
-		"",
-		true,
-		false,
-		false,
-		false,
-		nil,
-	)
+	msgs, err := ch.Consume("TestQueue", "", true, false, false, false, nil)
+
 	forever := make(chan bool)
 	go func() {
 		for d := range msgs {
 			fmt.Printf("Received Message: %s\n", d.Body)
 		}
 	}()
+
 	fmt.Println("Successfully connect to our RabbitMQ Instance")
 	fmt.Println(" [*] - waitingfor massages")
 	<-forever
