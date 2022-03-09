@@ -41,5 +41,4 @@ func main() {
 	)
 	handleError(err, "Cannot Published Message Queue")
 	fmt.Println("Successfully Published Message Queue")
-
 }
